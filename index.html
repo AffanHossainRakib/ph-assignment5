@@ -41,7 +41,7 @@
 
           <li class="flex items-center justify-center 
           gap-1 w-32 h-14 max-sm:w-16 max-sm:h-7 rounded-[50px] p-3 max-sm:p-2 font-extrabold bg-[#41ff6b1a]">
-            <span id="heartCount">0</span> <img class="max-w-5 h-5" src="assets/heart.png" alt="Given Heart">
+            <span id="globalHeartCount">0</span> <img class="max-w-5 h-5" src="assets/heart.png" alt="Given Heart">
           </li>
 
           <li class="flex items-center justify-center 
@@ -52,7 +52,7 @@
           <li
             class="flex items-center justify-center 
             gap-1 w-32 h-14 max-sm:w-16 max-sm:h-7 rounded-[50px] p-3 max-sm:p-2 font-semibold bg-[#00a63e] text-white">
-            <span>2</span>Copy
+            <span id="globalCopyCount">0</span>Copy
           </li>
 
         </ul>
@@ -76,10 +76,10 @@
 
         <!-- Single Card Component Start -->
         <div class="my-card p-5 shadow-sm  rounded-3xl bg-[#ebf5ef]">
-          
+
           <div class="flex justify-between items-center mb-4">
             <img class="w-[60px] h-[60px] p-[14px] rounded-2xl bg-red-300" src="assets/ambulance.png" alt="">
-            <span class="cursor-pointer" onclick="incrementHeartCount()">
+            <span class="cursor-pointer cardHeart">
               <i class="fa-regular fa-heart text-xl"></i>
             </span>
           </div>
@@ -90,12 +90,12 @@
           </div>
 
           <div class="mb-6">
-            <h1 class="text-4xl font-bold roboto-font">999</h1>
+            <h1 class="text-4xl font-bold roboto-font cardPhoneNumber">999</h1>
             <p class="text-lg font-normal hind-madurai px-4 text-[#5C5C5C]">Fire</p>
           </div>
 
           <div class="flex justify-between gap-2 roboto-font">
-            <button class="btn btn-outline w-1/2 rounded-lg">
+            <button class="btn btn-outline w-1/2 rounded-lg copyButton">
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button class="btn btn-outline w-1/2 rounded-lg bg-[#00A63E] text-white">
@@ -106,6 +106,10 @@
         </div>
 
         <!-- Single Card Component Ending -->
+
+
+
+
 
 
 
