@@ -46,7 +46,7 @@
 
           <li class="flex items-center justify-center 
           gap-1 w-32 h-14 max-sm:w-16 max-sm:h-7 rounded-[50px] p-3 max-sm:p-2 font-extrabold bg-[#41ff6b1a]">
-            <span>100</span> <img class=max-w-5 h-5" src="assets/coin.png" alt="Remaining Coin">
+            <span id="globalCoinCount">100</span> <img class="max-w-5 h-5" src="assets/coin.png" alt="Remaining Coin">
           </li>
 
           <li
@@ -85,7 +85,7 @@
           </div>
 
           <div class="mb-6">
-            <h2 class="text-2xl font-bold hind-madurai-font">Fire Service Number</h2>
+            <h2 class="text-2xl font-bold hind-madurai-font cardMainHeader">Fire Service Number</h2>
             <p class="text-lg text-[#5c5c5c] roboto-font">Fire Service</p>
           </div>
 
@@ -98,7 +98,7 @@
             <button class="btn btn-outline w-1/2 rounded-lg copyButton">
               <i class="fa-regular fa-copy"></i> Copy
             </button>
-            <button class="btn btn-outline w-1/2 rounded-lg bg-[#00A63E] text-white">
+            <button class="btn btn-outline w-1/2 rounded-lg bg-[#00A63E] text-white callButton">
               <i class="fa-solid fa-phone"></i> Call
             </button>
           </div>
@@ -121,22 +121,24 @@
           <p class="roboto-font font-medium text-xl">
             <i class="fa-regular fa-clock"></i> Call History
           </p>
-          <button class="btn btn-outline w-1/2 bg-[#00A63E] text-white rounded-[50px]">
+          <button id="callHistoryClearButton" class="btn btn-outline w-1/2 bg-[#00A63E] text-white rounded-[50px]">
             Clear
           </button>
         </div>
 
-        <!-- Individual Log Start -->
-        <div class="flex justify-between items-center p-4  shadow-sm  rounded-3xl bg-[#ebf5ef]">
-          <div>
-            <h3 class="text-[#111111] inter-font font-semibold text-lg">National Emergency Number</h3>
-            <p class="text-[#5C5C5C] hind-madurai-font font-normal text-lg ">1994-999999</p>
-          </div>
-          <div>
-            <p class="font-normal text-lg hind-madurai-font text-[#111111]">11:36:58 AM</p>
-          </div>
+        <div class="callHistoryContainer">
+          <!-- Individual Log Start -->
+          <!-- <div class="flex justify-between items-center p-4  shadow-sm  rounded-3xl bg-[#ebf5ef]">
+            <div>
+              <h3 class="text-[#111111] inter-font font-semibold text-lg">National Emergency Number</h3>
+              <p class="text-[#5C5C5C] hind-madurai-font font-normal text-lg ">1994-999999</p>
+            </div>
+            <div>
+              <p class="font-normal text-lg hind-madurai-font text-[#111111]">11:36:58 AM</p>
+            </div>
+          </div> -->
+          <!-- Individual Log End -->
         </div>
-        <!-- Individual Log End -->
       </div>
     </div>
 
