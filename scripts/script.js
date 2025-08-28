@@ -10,13 +10,14 @@ function setElementValueById(elementId, value) {
 }
 
 function updateCallHistoryUI() {
-    const callHistoryContainer = document.querySelector(".callHistoryContainer");
-    callHistoryContainer.innerHTML = ""; // Clear existing logs
+  const callHistoryContainer = document.querySelector(".callHistoryContainer");
+  callHistoryContainer.innerHTML = ""; // Clear existing logs
 
-    callHistory.forEach((log) => {
-        const logElement = document.createElement("div");
-        logElement.className = "flex justify-between items-center p-4 m-2 shadow-sm  rounded-3xl bg-[#ebf5ef]";
-        logElement.innerHTML = `
+  callHistory.forEach((log) => {
+    const logElement = document.createElement("div");
+    logElement.className =
+      "flex justify-between items-center p-4 m-2 shadow-sm  rounded-3xl bg-[#ebf5ef]";
+    logElement.innerHTML = `
           <div>
             <h3 class="text-[#111111] inter-font font-semibold text-lg">${log.mainHeader}</h3>
             <p class="text-[#5C5C5C] hind-madurai-font font-normal text-lg ">${log.number}</p>
@@ -25,8 +26,8 @@ function updateCallHistoryUI() {
             <p class="font-normal text-lg hind-madurai-font text-[#111111]">${log.time}</p>
           </div>
         `;
-        callHistoryContainer.appendChild(logElement);
-    });
+    callHistoryContainer.appendChild(logElement);
+  });
 }
 // Common functions end
 
@@ -68,7 +69,6 @@ callButtons.forEach((button) => {
       );
       return;
     }
-    setElementValueById("globalCoinCount", currentGlobalCoinCount - 20);
 
     const parent2 = button.parentElement.parentElement; // Going two steps back
     const callLog = {
@@ -77,16 +77,17 @@ callButtons.forEach((button) => {
       time: new Date().toLocaleTimeString(),
     };
     callHistory.push(callLog);
+    alert(`Calling ${callLog.mainHeader} at ${callLog.number}`);
+    setElementValueById("globalCoinCount", currentGlobalCoinCount - 20);
 
     // Update call history UI
     updateCallHistoryUI();
   });
 });
 
-
 // Clearing Call History
 const clearHistoryButton = document.getElementById("callHistoryClearButton");
 clearHistoryButton.addEventListener("click", () => {
-    callHistory.length = 0; // Clear the call history array
-    updateCallHistoryUI(); // Update the UI
+  callHistory.length = 0; // Clear the call history array
+  updateCallHistoryUI(); // Update the UI
 });
