@@ -71,10 +71,69 @@
   </header>
 
   <main>
+    <div class="flex justify-between max-sm:flex-col-reverse max-sm:items-center gap-7 mt-14 mx-8">
+      <div class="grid grid-cols-3 max-sm:grid-cols-1 max-sm:mx-auto w-3/4 max-sm:w-full gap-7">
+
+        <!-- Single Card Component Start -->
+        <div class="my-card p-5 shadow-sm  rounded-3xl bg-[#ebf5ef]">
+          <div class="flex justify-between items-center mb-4">
+            <img class="w-[60px] h-[60px] p-[14px] rounded-2xl bg-red-300" src="assets/ambulance.png" alt="">
+            <i class="fa-regular fa-heart text-xl"></i>
+          </div>
+
+          <div class="mb-6">
+            <h2 class="text-2xl font-bold hind-madurai-font">Fire Service Number</h2>
+            <p class="text-lg text-[#5c5c5c] roboto-font">Fire Service</p>
+          </div>
+
+          <div class="mb-6">
+            <h1 class="text-4xl font-bold roboto-font">999</h1>
+            <p class="text-lg font-normal hind-madurai px-4 text-[#5C5C5C]">Fire</p>
+          </div>
+
+          <div class="flex justify-between gap-2 roboto-font">
+            <button class="btn btn-outline w-1/2 rounded-lg">
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button class="btn btn-outline w-1/2 rounded-lg bg-[#00A63E] text-white">
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Single Card Component Ending -->
+      </div>
+
+      <div class="w-1/4 max-sm:w-full">
+        <div class="flex justify-between items-center mb-4">
+          <p class="roboto-font font-medium text-xl">
+            <i class="fa-regular fa-clock"></i> Call History
+          </p>
+          <button class="btn btn-outline w-1/2 bg-[#00A63E] text-white rounded-[50px]">
+            Clear
+          </button>
+        </div>
+
+        <!-- Individual Log Start -->
+        <div class="flex justify-between items-center p-4  shadow-sm  rounded-3xl bg-[#ebf5ef]">
+          <div>
+            <h3 class="text-[#111111] inter-font font-semibold text-lg">National Emergency Number</h3>
+            <p class="text-[#5C5C5C] hind-madurai-font font-normal text-lg ">1994-999999</p>
+          </div>
+          <div>
+            <p class="font-normal text-lg hind-madurai-font text-[#111111]">11:36:58 AM</p>
+          </div>
+        </div>
+        <!-- Individual Log End -->
+      </div>
+    </div>
 
   </main>
   <footer>
+    <div class="h-20">
 
+    </div>
   </footer>
 </body>
 
